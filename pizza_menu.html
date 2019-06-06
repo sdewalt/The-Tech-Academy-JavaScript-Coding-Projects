@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Drill Demo</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<style>#menuBG{width:400px;height:470px;margin:10px auto;}#frmMenu{width:400px;height:200px;}
+		#totalPrice{width:200px;height:190px;margin:0 auto;float:right;}.left{width:200px;height:200px;float:left;}
+		.right{width:200px;height:200px;float:right;}#showText{width:200px;height:190px;margin:0px auto;float:left;}
+		#cart{top:0;margin:0px auto;width:400px;height:200px;}#btnOrder{margin:10px 0px 0px 100px;width:100px;height:40px}
+		</style>
+		
+	</head>
+	<body>
+		<div id="menuBG">
+			<h1 style="margin:0 0px 0 60px;">Pizza Heaven</h1>
+			
+				
+			<form id="frmMenu">
+				<div class="menu left">
+					<h3>Size:</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza" checked> Personal Pizza<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+				</div>
+				<div class="menu left">
+					<h3>Crust:</h3>
+					<input class="crust" type="radio" name="Crust" value="Plain"> Plain<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter"> Garlic Butter<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust" checked> Cheese Stuffed<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy"> Spicy<br>
+					<input class="crust" type="radio" name="Crust" value="House Special"> House Special<br>
+				</div>
+				<div class="menu right">
+					<h3>Veggies:</h3>
+					<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" checked> Tomatoes<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Onions" checked> Onions <br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers"> Green Peppers<br> 
+					<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Mushrooms<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Spinach<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> Jalapeno<br>
+					
+				</div>
+				<div class="menu left">
+					<h3>Meats:</h3>
+					<input class="meats" type="checkbox" name="Meats" value="Pepperoni" checked> Pepperoni<br>
+					<input class="meats" type="checkbox" name="Meats" value="Sausage" checked> Sausage <br>
+					<input class="meats" type="checkbox" name="Meats" value="Canadian Bacon"> Canadian Bacon<br> 
+					<input class="meats" type="checkbox" name="Meats" value="Ground Beef"> Ground Beef<br>
+					<input class="meats" type="checkbox" name="Meats" value="Anchovy"> Anchovy<br>
+					<input class="meats" type="checkbox" name="Meats" value="Chicken"> Chicken<br>
+				</div>
+				<div class="menu right">
+					<h3>Cheese:</h3>
+					<input class="cheese" type="radio" name="Cheese" value="Regular"> Regular<br>
+					<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra Cheese" checked> Extra Cheese<br>
+		
+				</div>
+	
+				
+				<div class="menu right">
+					<h3>Sauce:</h3>
+					<input class="sauce" type="radio" name="Sauce" value="Marinara" checked> Marinara<br>
+					<input class="sauce" type="radio" name="Sauce" value="White"> White<br>
+					<input class="sauce" type="radio" name="Sauce" value="No Sauce"> No Sauce<br>
+				</div>
+				<div>
+					<input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+				</div>
+				<div id="cart">
+					<h8 id="showText1"></h8>
+					<h8 id="showText2"></h8>
+					<h8 id="totalPrice2"></h8>
+					
+				</div>
+			</form>
+		</div>
+		<script src="final_drill_basic.js"></script>
+	</body>
+</html>
